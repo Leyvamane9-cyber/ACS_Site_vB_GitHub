@@ -1,0 +1,333 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Advance Construction Services LLC — Gutters 5” y 6”</title>
+  <style>
+    :root{
+      --bg:#0e0f10; --bg2:#141618; --ink:#e8e8e8; --muted:#a9adb2; --accent:#d5d7da;
+      --card:#1b1d20; --line:#2a2e33; --brand:#cfcfcf;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:32px auto;padding:24px}
+    .hero{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;padding:20px;border:1px solid var(--line);background:
+        radial-gradient(1200px 200px at -10% -30%, rgba(255,255,255,0.07), transparent),
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border-radius:16px;box-shadow:0 18px 60px rgba(0,0,0,0.45)}
+    .logo3d{
+      width:120px;height:120px;border-radius:14px;
+      background:linear-gradient(135deg,#444,#191919);
+      position:relative;box-shadow:inset 4px 4px 12px rgba(0,0,0,0.6), inset -4px -4px 16px rgba(255,255,255,0.05), 0 10px 30px rgba(0,0,0,0.6);
+      display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;letter-spacing:1px
+    }
+    .logo3d:before{
+      content:"ACS"; font-size:28px; text-shadow:0 2px 8px rgba(0,0,0,0.6);
+    }
+    h1{margin:0;font-size:28px;letter-spacing:.4px}
+    .tag{margin-top:6px;color:var(--muted)}
+    .ribbon{
+      display:inline-block;margin-top:10px;padding:6px 10px;border-radius:10px;
+      background:linear-gradient(180deg,#e6e6e6,#bfbfbf); color:#111; font-weight:700; font-size:13px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.35)
+    }
+    .grid{display:grid;gap:16px}
+    .two{grid-template-columns:1fr 1fr}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid var(--line); border-radius:14px; padding:16px 16px 18px;
+      box-shadow:0 14px 30px rgba(0,0,0,0.35)
+    }
+    .card h2{margin:0 0 6px 0;font-size:18px}
+    .card p{color:var(--accent)}
+    .comp{display:grid;grid-template-columns:88px 1fr;gap:14px;align-items:center;margin:12px 0;padding:12px;border:1px dashed rgba(255,255,255,0.06);border-radius:12px}
+    .comp-3d{width:88px;height:64px;border-radius:10px;position:relative;
+      background:linear-gradient(120deg,#2b2d30 0%, #0f1012 60%);
+      box-shadow:
+        inset 0 2px 10px rgba(255,255,255,0.05),
+        inset 0 -10px 20px rgba(0,0,0,0.5),
+        0 18px 40px rgba(0,0,0,0.5);
+      transform:perspective(600px) rotateX(12deg) rotateY(-10deg);
+      overflow:hidden;
+    }
+    .comp-3d:after{ /* metallic bevel */
+      content:""; position:absolute; inset:0; border-radius:10px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.10), transparent 40%, rgba(255,255,255,0.04) 60%, transparent);
+      mix-blend-mode:screen;
+    }
+    .comp-title{font-weight:700}
+    .list{margin:6px 0 0 0; padding-left:18px; line-height:1.6}
+    .colors{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:10px}
+    .swatch{
+      display:flex;gap:10px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:10px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    }
+    .chip{
+      width:28px;height:28px;border-radius:6px;
+      background:linear-gradient(135deg,#d7d7d7,#7a7a7a); /* neutral metallic placeholder */
+      box-shadow:inset 0 1px 4px rgba(255,255,255,0.35), inset 0 -3px 8px rgba(0,0,0,0.5), 0 6px 14px rgba(0,0,0,0.35);
+    }
+    .contact{
+      display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:8px;padding:14px;border-top:1px solid var(--line)
+    }
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:12px}
+    /* Language chooser modal */
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(2px)}
+    .modal{width:min(520px,92vw);background:linear-gradient(180deg,#1d1f22,#16181a);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 24px 80px rgba(0,0,0,.55)}
+    .modal h3{margin:0 0 8px 0}
+    .modal p{color:var(--muted);margin:0 0 10px 0}
+    .modal .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{appearance:none;border:1px solid var(--line);background:linear-gradient(180deg,#e9e9e9,#c0c0c0);color:#111;font-weight:700;padding:10px 14px;border-radius:10px;cursor:pointer}
+    .btn-ghost{background:transparent;color:var(--ink)}
+    @media (max-width:800px){.hero{grid-template-columns:1fr}.logo3d{width:96px;height:96px}}
+  </style>
+</head>
+<body>
+  <div id="langOverlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="lTitle">
+    <div class="modal">
+      <h3 id="lTitle">Choose Language / Elige idioma</h3>
+      <p>Would you like to view this page in English or Español?</p>
+      <div class="actions">
+        <button class="btn" onclick="setLang('en')">English</button>
+        <button class="btn btn-ghost" onclick="setLang('es')">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" role="main">
+    <section class="hero" aria-labelledby="brand">
+      <div class="logo3d" aria-hidden="true"></div>
+      <div>
+        <h1 id="brand" data-i18n="brand">Advance Construction Services LLC</h1>
+        <div class="tag" data-i18n="tag">Seamless Rain Gutters • 5” y 6” • Instalación profesional</div>
+        <div class="ribbon" data-i18n="ribbon">Más de 15 años ofreciendo calidad y servicio en gutters, dando atención inmediata</div>
+      </div>
+    </section>
+
+    <div class="grid two" style="margin-top:16px">
+      <div class="card">
+        <h2 data-i18n="systems_title">Sistemas: 5” y 6”</h2>
+        <p data-i18n="systems_copy">
+          Trabajamos con perfiles K-Style y Half-Round (por pedido especial). Recomendamos 6” para techos con mayor caudal o pendientes complejas, y 5” para viviendas estándar.
+        </p>
+        <div class="comp">
+          <div class="comp-3d" aria-hidden="true"></div>
+          <div>
+            <div class="comp-title" data-i18n="k_title">K-Style</div>
+            <div class="muted" data-i18n="k_copy">Excelente capacidad hidráulica y apariencia moderna; ideal para residencias y comercios.</div>
+          </div>
+        </div>
+        <div class="comp">
+          <div class="comp-3d" aria-hidden="true"></div>
+          <div>
+            <div class="comp-title" data-i18n="half_title">Half-Round (especial)</div>
+            <div class="muted" data-i18n="half_copy">Perfil semicircular clásico; recomendado por estética tradicional y fácil limpieza.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="core_title">Aluminio .032 — Diferencia profesional</h2>
+        <p data-i18n="core_copy">
+          Utilizamos exclusivamente aluminio calibre .032 para mayor rigidez, durabilidad y desempeño bajo lluvia intensa. No trabajamos cobre: nuestra especialidad es el aluminio de alta calidad.
+        </p>
+        <ul class="list">
+          <li data-i18n="core_li1">Mejor resistencia a abolladuras versus grosores inferiores.</li>
+          <li data-i18n="core_li2">Acabados profesionales compatibles con protectores (Gutter RX, Rain Drop).</li>
+          <li data-i18n="core_li3">Instalación con fijación premium (tornillos de 1.5” y 2.5”, remaches y sellado de alto rendimiento).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2 data-i18n="comp_title">Componentes y Accesorios</h2>
+      <div class="grid" style="gap:10px">
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Downspout</div><div class="muted" data-i18n="down_copy">Conduce el agua al suelo o drenaje.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">A Elbow</div><div class="muted" data-i18n="aelbow">Codo frontal para cambios de dirección.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">B Elbow</div><div class="muted" data-i18n="belbow">Codo lateral para alineación a muro.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Outlets</div><div class="muted" data-i18n="outlet">Conector de canalón a bajante.</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Box Mitre</div><div class="muted" data-i18n="boxmitre">Esquina prefabricada de alta estanqueidad.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Bay Mitre</div><div class="muted" data-i18n="baymitre">Mitre para ventanas tipo bahía.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Strip Mitre</div><div class="muted" data-i18n="stripmitre">Tira para sellar y reforzar esquinas.</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Left End Cap</div><div class="muted" data-i18n="leftcap">Cierre izquierdo para evitar fugas.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Right End Cap</div><div class="muted" data-i18n="rightcap">Cierre derecho para evitar fugas.</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Hangfast</div><div class="muted" data-i18n="hangfast">Anclaje de alta resistencia.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Hangers</div><div class="muted" data-i18n="hangers">Soportes interiores para rigidez.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Pipe Band</div><div class="muted" data-i18n="pipeband">Abrazadera para fijar bajantes.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">T-Strap</div><div class="muted" data-i18n="tstrap">Fijación adicional al muro.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Ledge Jumper</div><div class="muted" data-i18n="ledgejumper">Salva aleros y remates.</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Rivets</div><div class="muted" data-i18n="rivets">Unión permanente, limpia y resistente.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Zip Screw</div><div class="muted" data-i18n="zip">Tornillo autorroscante rápido.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Screws 1.5” y 2.5”</div><div class="muted" data-i18n="screws">Fijación estructural del sistema.</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Caulk</div><div class="muted" data-i18n="caulk">Selladores (blanco, silver, café, negro).</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Gutter RX</div><div class="muted" data-i18n="gutterrx">Protector anti-hojas de alto rendimiento.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Rain Drop</div><div class="muted" data-i18n="raindrop">Sistema de filtrado robusto.</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Drain Adapter</div><div class="muted" data-i18n="drainadapter">Transición a drenaje subterráneo.</div></div></div>
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Funnel</div><div class="muted" data-i18n="funnel">Embudo para alto caudal.</div></div></div>
+
+        <div class="comp"><div class="comp-3d"></div><div><div class="comp-title">Paint</div><div class="muted" data-i18n="paint">Acabado y retoques para uniformidad.</div></div></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2 data-i18n="colors_title">Colores disponibles (entrega en &lt; 1 día)</h2>
+      <p class="muted" data-i18n="colors_note">Manejamos disponibilidad rápida — esto nos diferencia de otras compañías.</p>
+      <div class="colors">
+        <div class="swatch"><div class="chip"></div><div>White</div></div>
+        <div class="swatch"><div class="chip"></div><div>Linen</div></div>
+        <div class="swatch"><div class="chip"></div><div>Cameo</div></div>
+        <div class="swatch"><div class="chip"></div><div>Alcoa Almond</div></div>
+        <div class="swatch"><div class="chip"></div><div>Sand Castle</div></div>
+        <div class="swatch"><div class="chip"></div><div>Wicker</div></div>
+        <div class="swatch"><div class="chip"></div><div>Nordwood</div></div>
+        <div class="swatch"><div class="chip"></div><div>Pebblestone Clay</div></div>
+        <div class="swatch"><div class="chip"></div><div>Clay</div></div>
+        <div class="swatch"><div class="chip"></div><div>Colonial Gray</div></div>
+        <div class="swatch"><div class="chip"></div><div>Charcoal Gray</div></div>
+        <div class="swatch"><div class="chip"></div><div>Forest Green</div></div>
+        <div class="swatch"><div class="chip"></div><div>Royal Brown</div></div>
+        <div class="swatch"><div class="chip"></div><div>Musket Brown</div></div>
+        <div class="swatch"><div class="chip"></div><div>Bronze / Terra Tone</div></div>
+        <div class="swatch"><div class="chip"></div><div>Dark Bronze</div></div>
+        <div class="swatch"><div class="chip"></div><div>Black</div></div>
+        <div class="swatch"><div class="chip"></div><div>Victorian Gray</div></div>
+        <div class="swatch"><div class="chip"></div><div>Classic Cream</div></div>
+        <div class="swatch"><div class="chip"></div><div>Sandtone</div></div>
+        <div class="swatch"><div class="chip"></div><div>Redwood</div></div>
+        <div class="swatch"><div class="chip"></div><div>Copper Penny</div></div>
+      </div>
+    </div>
+
+    <div class="card contact">
+      <div><strong>Advance Construction Services LLC</strong></div>
+      <div class="pill">📞 414-687-0490</div>
+      <div class="pill">✉️ Tito0672@yahoo.com</div>
+    </div>
+
+    <footer>
+      <div data-i18n="foot_left">© Advance Construction Services LLC</div>
+      <div data-i18n="foot_right">Seamless Rain Gutters • 5” y 6”</div>
+    </footer>
+  </div>
+
+  <script>
+    const dict = {
+      en: {
+        brand: "Advance Construction Services LLC",
+        tag: "Seamless Rain Gutters • 5” and 6” • Professional installation",
+        ribbon: "Over 15 years delivering quality and service in gutters, with immediate attention",
+        systems_title: "Systems: 5” and 6”",
+        systems_copy: "We work with K-Style and Half-Round (special order). We recommend 6” for higher runoff or complex roofs, and 5” for standard homes.",
+        k_title: "K-Style",
+        k_copy: "Excellent hydraulic capacity and modern look; ideal for residential and commercial.",
+        half_title: "Half-Round (special order)",
+        half_copy: "Classic semi-circular profile; recommended for traditional aesthetics and easy cleaning.",
+        core_title: ".032 Aluminum — Professional difference",
+        core_copy: "We exclusively use .032 aluminum for extra rigidity, durability and performance in heavy rain. We do not work with copper; our specialty is high‑quality aluminum.",
+        core_li1: "Better dent resistance versus thinner gauges.",
+        core_li2: "Pro finishes compatible with guards (Gutter RX, Rain Drop).",
+        core_li3: "Installation with premium fastening (1.5” & 2.5” screws, rivets and high‑performance sealant).",
+        comp_title: "Components & Accessories",
+        down_copy: "Routes water to the ground or drainage.",
+        aelbow: "Front elbow for direction changes.",
+        belbow: "Side elbow for wall alignment.",
+        outlet: "Connector from gutter to downspout.",
+        boxmitre: "Pre‑made high‑seal corner.",
+        baymitre: "Mitre for bay windows.",
+        stripmitre: "Strip to seal/reinforce corners.",
+        leftcap: "Left end closure to avoid leaks.",
+        rightcap: "Right end closure to avoid leaks.",
+        hangfast: "High‑strength anchor.",
+        hangers: "Internal supports for rigidity.",
+        pipeband: "Clamp to secure downspouts.",
+        tstrap: "Additional wall fastening.",
+        ledgejumper: "Bypasses ledges and trims.",
+        rivets: "Permanent, clean and strong joint.",
+        zip: "Quick self‑tapping screw.",
+        screws: "Structural fastening for the system.",
+        caulk: "Sealants (white, silver, brown, black).",
+        gutterrx: "High‑performance leaf guard.",
+        raindrop: "Robust filtering system.",
+        drainadapter: "Transition to underground drainage.",
+        funnel: "High‑flow funnel.",
+        paint: "Finish and touch‑ups for uniformity.",
+        colors_title: "Available colors (delivery in < 1 day)",
+        colors_note: "We handle fast availability — this sets us apart from other companies.",
+        foot_left: "© Advance Construction Services LLC",
+        foot_right: "Seamless Rain Gutters • 5” and 6”",
+      },
+      es: {
+        brand: "Advance Construction Services LLC",
+        tag: "Gutters Continuos • 5” y 6” • Instalación profesional",
+        ribbon: "Más de 15 años ofreciendo calidad y servicio en gutters, dando atención inmediata",
+        systems_title: "Sistemas: 5” y 6”",
+        systems_copy: "Trabajamos con perfiles K-Style y Half-Round (por pedido especial). Recomendamos 6” para techos con mayor caudal o pendientes complejas, y 5” para viviendas estándar.",
+        k_title: "K-Style",
+        k_copy: "Excelente capacidad hidráulica y apariencia moderna; ideal para residencias y comercios.",
+        half_title: "Half-Round (especial)",
+        half_copy: "Perfil semicircular clásico; recomendado por estética tradicional y fácil limpieza.",
+        core_title: "Aluminio .032 — Diferencia profesional",
+        core_copy: "Utilizamos exclusivamente aluminio calibre .032 para mayor rigidez, durabilidad y desempeño bajo lluvia intensa. No trabajamos cobre: nuestra especialidad es el aluminio de alta calidad.",
+        core_li1: "Mejor resistencia a abolladuras versus grosores inferiores.",
+        core_li2: "Acabados profesionales compatibles con protectores (Gutter RX, Rain Drop).",
+        core_li3: "Instalación con fijación premium (tornillos de 1.5” y 2.5”, remaches y sellado de alto rendimiento).",
+        comp_title: "Componentes y Accesorios",
+        down_copy: "Conduce el agua al suelo o drenaje.",
+        aelbow: "Codo frontal para cambios de dirección.",
+        belbow: "Codo lateral para alineación a muro.",
+        outlet: "Conector de canalón a bajante.",
+        boxmitre: "Esquina prefabricada de alta estanqueidad.",
+        baymitre: "Mitre para ventanas tipo bahía.",
+        stripmitre: "Tira para sellar y reforzar esquinas.",
+        leftcap: "Cierre izquierdo para evitar fugas.",
+        rightcap: "Cierre derecho para evitar fugas.",
+        hangfast: "Anclaje de alta resistencia.",
+        hangers: "Soportes interiores para rigidez.",
+        pipeband: "Abrazadera para fijar bajantes.",
+        tstrap: "Fijación adicional al muro.",
+        ledgejumper: "Salva aleros y remates.",
+        rivets: "Unión permanente, limpia y resistente.",
+        zip: "Tornillo autorroscante rápido.",
+        screws: "Fijación estructural del sistema.",
+        caulk: "Selladores (blanco, silver, café, negro).",
+        gutterrx: "Protector anti-hojas de alto rendimiento.",
+        raindrop: "Sistema de filtrado robusto.",
+        drainadapter: "Transición a drenaje subterráneo.",
+        funnel: "Embudo para alto caudal.",
+        paint: "Acabado y retoques para uniformidad.",
+        colors_title: "Colores disponibles (entrega en < 1 día)",
+        colors_note: "Manejamos disponibilidad rápida — esto nos diferencia de otras compañías.",
+        foot_left: "© Advance Construction Services LLC",
+        foot_right: "Gutters Continuos • 5” y 6”",
+      }
+    };
+
+    function setLang(l){
+      try{ localStorage.setItem('acs_lang', l); }catch(e){}
+      for (const el of document.querySelectorAll("[data-i18n]")){
+        const key = el.getAttribute("data-i18n");
+        if (dict[l] && dict[l][key]) el.textContent = dict[l][key];
+      }
+      document.getElementById('langOverlay').style.display='none';
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+    }
+
+    (function(){
+      let pref = null;
+      try{ pref = localStorage.getItem('acs_lang'); }catch(e){}
+      if (pref){ setLang(pref); document.getElementById('langOverlay').style.display='none'; }
+    })();
+  </script>
+</body>
+</html>
